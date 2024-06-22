@@ -1,0 +1,28 @@
+.table-borderless tbody tr {
+  border-bottom: none;
+}
+.text-name-color {
+  color: #19283f; /* Change 'red' to the color you want */
+}
+.text-value-color {
+  color: #777777; /* Change 'red' to the color you want */
+}
+
+
+.btn.dash {
+  margin-top: 10px;
+  background-color: #19283f;
+  color: white;
+  border: none;
+}
+.btn.dash:hover {
+  background-color: #19283ff1;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+.success {
+  height: 277px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success h1 {
+  color: #2eb6b1;
+}
+@media (max-width: 768px) {
+  .success {
+    height: 205px; /* Allow the height to adjust based on content */
+    padding: 20px; /* Add some padding for better spacing */
+    text-align: center; /* Center the text */
+  }
+}

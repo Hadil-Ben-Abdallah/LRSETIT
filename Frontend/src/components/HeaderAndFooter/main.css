@@ -1,0 +1,95 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn,
+.main-btn1 {
+  background-color: var(--green-color);
+  color: var(--dark-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn{
+  margin-right: 15px;
+}
+.main-btn:hover,
+.main-btn1:hover {
+  color: rgb(146, 67, 161);
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar {
+  background-color: var(--dark-color);
+}
+.navbar img {
+  width: 90px;
+  height: 60px;
+}
+.navbar .navbar-nav .nav-link {
+  color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: white;
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler:hover {
+  background-color: var(--dark-color);
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+h1 {
+  margin-bottom: 30px;
+  font-family: "Noto Kufi Arabic";
+}
+.commencer {
+  background-color: var(--green-color);
+}
+.commencer:hover {
+  color: rgb(146, 67, 161);
+}
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright {
+  font-weight: 500;
+}
+.footer .copyright div span {
+  color: rgb(146, 67, 161);
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+

@@ -1,0 +1,39 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+label {
+  font-size: 15px;
+  color: var(--dark-color);
+}
+span {
+  color: var(--red-color);
+}
+input[type=radio]:checked {
+  background-color: var(--green-color);
+  border: none;
+}
+input:focus{
+  border: none;
+}
+.btn.submit{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--dark-color);
+  color: var(--green-color);
+}
+.btn.submit:hover  {
+  background-color: var(--green-color);
+  color: var(--dark-color);
+}
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}

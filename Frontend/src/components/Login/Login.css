@@ -1,0 +1,74 @@
+:root {
+  --dark-color: #19283f;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  text-align: center;
+  color: var(--dark-color);
+}
+.wrapper {
+  height: 100vh;
+}
+.login {
+  width: 300px;
+  height: min-content;
+  padding: 20px;
+  border-radius: 5px;
+  color: black;
+  background-color: var(--section-color);
+}
+.password-field {
+  position: relative;
+}
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.eye-icon {
+  color: black;
+  position: absolute;
+  right: 35px; 
+  cursor: pointer;
+}
+.invalid-feedback {
+  display: block;
+  margin-top: 5px;
+}
+input[type=checkbox]:checked {
+  background-color: var(--dark-color);
+  border: none;
+}
+.log {
+  background-color: var(--dark-color);
+  border: none;
+  margin-bottom: 18px;
+}
+.log:hover {
+  background-color: #29456d;
+}
+.insc {
+  color: var(--dark-color);
+}
+.insc:hover {
+  color: var(--dark-color);
+}
+.insc {
+  position: relative;
+}
+.insc::after {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 2px;
+  background-color: var(--dark-color);
+  bottom: 6px;
+  left: 35%;
+}
+.btn-check:focus + .btn-success, .btn-success:focus,
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
+  background-color: var(--dark-color);
+}

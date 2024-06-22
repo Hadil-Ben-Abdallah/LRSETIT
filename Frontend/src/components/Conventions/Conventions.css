@@ -1,0 +1,42 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+label {
+  font-size: 15px;
+  color: var(--dark-color);
+}
+select option {
+  font-size: 14px;
+  color: rgb(83, 83, 83);
+  overflow: hidden;
+}
+span {
+  color: var(--red-color);
+}
+.form-check {
+  color: var(--dark-color);
+}
+input[type=checkbox]:checked {
+  background-color: var(--green-color);
+  border: none;
+}
+input:focus{
+  border: none;
+}
+.btn.submit {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--dark-color);
+  color: var(--green-color);
+}
+.btn.submit:hover  {
+  background-color: var(--green-color);
+  color: var(--dark-color);
+}

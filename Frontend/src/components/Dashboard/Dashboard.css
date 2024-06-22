@@ -1,0 +1,97 @@
+.a1
+{
+    width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100";
+}
+.a2
+{
+    width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100";
+}
+.a3
+{
+    width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100";
+}
+.a4
+{
+    width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100";
+}
+.a5
+{
+    width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100";
+}
+.a6
+{
+    width: 25rem;
+}
+.a7
+{
+    width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100";
+}
+.toggled {
+    overflow: visible;
+    width: 6.5rem!important;
+}
+.toggled1 {
+    width: 0!important;
+    overflow: hidden;
+}
+.main-color {
+  background-color: #19283f;
+}
+.card-header h6 {
+  color: #19283f;
+}
+.container-fluid .report a{
+  background-color: #19283f;
+  color: rgb(238, 238, 238);
+}
+.container-fluid .report a:hover {
+  color: rgb(209, 209, 209);
+}
+.input-group-append button {
+  border: none;
+}
+.input-group-append button:hover {
+  background-color: #19283f;
+}
+.input-group-append .btn-primary.focus, .btn-primary:focus  {
+  background-color: #19283f;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle 
+.card-header .text-primary {
+  background-color: #19283f;
+  box-shadow: none;
+}
+.form-control.search:focus {
+  box-shadow: none;
+}
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: none;
+}
+.sidebar-brand-icon img {
+  width: 60px;
+  height: 50px;
+}
+.navbar-expand .btn-link {
+  color: #19283f;
+}
+.navbar-nav span {
+  color: rgb(224, 224, 224);
+}
+.dropdown .badge-counter {
+  background-color: rgb(228, 4, 4);
+  color: white;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: black;
+  text-decoration: none;
+  background-color: #eaecf4;
+}
+.footer-dashboard {
+  background-color: transparent;
+}
+.copyright.dashboard {
+  color: #19283f;
+}
+.copyright div span {
+  color: rgb(146, 67, 161);
+}

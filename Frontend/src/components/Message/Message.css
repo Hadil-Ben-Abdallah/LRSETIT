@@ -1,0 +1,18 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+.btn.dash {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: var(--dark-color);
+  color: white;
+  border: none;
+}
+.btn.dash:hover  {
+  background-color: #19283ff1;
+  color: white;
+}

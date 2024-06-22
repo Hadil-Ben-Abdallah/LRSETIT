@@ -1,0 +1,19 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* .landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+} */
+/* h1 {
+  font-size: xx-large;
+  margin-bottom: 40px;
+  font-family: "Noto Kufi Arabic";
+} */
