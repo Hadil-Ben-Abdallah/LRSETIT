@@ -163,7 +163,7 @@ function ChapitresTable() {
                 <td>{Chapitre.isbnChap}</td>
                 <td>{formatDate(Chapitre.dateChap)}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${Chapitre.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-chapitre/${Chapitre.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(Chapitre.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

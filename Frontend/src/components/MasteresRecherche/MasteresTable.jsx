@@ -123,7 +123,7 @@ function MasteresTable() {
                 <td>{mastere.sujetMast}</td>
                 <td>{mastere.encadrantMast}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${mastere.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-mastere/${mastere.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(mastere.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

@@ -12,7 +12,6 @@ import MasteresRecherche from "../components/MasteresRecherche/MasteresRecherche
 import ManifestationsScientifiques from "../components/ManifestationsScientifiques/ManifestationsScientifiques";
 import Conventions from "../components/Conventions/Conventions";
 import NewProject from "../components/NewProject/NewProject";
-import Home from "../Pages/Home";
 import Login from "../components/Login/Login";
 import Dashboard from "../components/Dashboard/Dashboard";
 import CreateSuccess from "../components/CreateSuccess/CreateSuccess"
@@ -20,6 +19,14 @@ import EditSuccess from "../components/CreateSuccess/EditSuccess"
 import EditProject from "../components/Edit/EditProject"
 import EditArticle from "../components/Edit/EditArticle";
 import EditBrevet from "../components/Edit/EditBrevet";
+import EditChapitre from "../components/Edit/EditChapitre";
+import EditConvention from "../components/Edit/EditConvention";
+import EditHabilitation from "../components/Edit/EditHabilitation";
+import EditManifestation from "../components/Edit/EditManifestation";
+import EditMastere from "../components/Edit/EditMastere";
+import EditObtention from "../components/Edit/EditObtention";
+import EditOuvrage from "../components/Edit/EditOuvrage";
+import EditThese from "../components/Edit/EditThese";
 import Contact from "../components/Contact/Contact";
 import SentSuccess from "../components/CreateSuccess/SentSuccess";
 
@@ -57,6 +64,14 @@ const Routers = () => {
       <Route path="/edit-project/:id" element={<EditProject />} />
       <Route path="/edit-article/:id" element={<EditArticle />} />
       <Route path="/edit-brevet/:id" element={<EditBrevet />} />
+      <Route path="/edit-chapitre/:id" element={<EditChapitre />} />
+      <Route path="/edit-convention/:id" element={<EditConvention />} />
+      <Route path="/edit-habilitation/:id" element={<EditHabilitation />} />
+      <Route path="/edit-manifestation/:id" element={<EditManifestation />} />
+      <Route path="/edit-mastere/:id" element={<EditMastere />} />
+      <Route path="/edit-obtention/:id" element={<EditObtention />} />
+      <Route path="/edit-ouvrage/:id" element={<EditOuvrage />} />
+      <Route path="/edit-these/:id" element={<EditThese />} />
       {/* <Route path="/" element={<Home />}/> */}
       <Route path="/home" element={<ArticlesScientifiques />}/>
     </Routes>

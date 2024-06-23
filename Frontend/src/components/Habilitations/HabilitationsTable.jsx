@@ -123,7 +123,7 @@ function HabilitationsTable() {
                 <td>{habilitation.encadrantHabi}</td>
                 <td>{formatDate(habilitation.dateHabi)}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${habilitation.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-habilitation/${habilitation.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(habilitation.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

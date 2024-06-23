@@ -128,7 +128,7 @@ function ThesesTable() {
                 <td>{these.encadrantThes}</td>
                 <td>{these.cotutelleThes}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${these.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-these/${these.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(these.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

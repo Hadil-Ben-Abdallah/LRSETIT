@@ -128,7 +128,7 @@ function ManifestationsTable() {
                 <td>{manifestation.typeMan}</td>
                 <td>{manifestation.siteMan}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${manifestation.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-manifestation/${manifestation.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(manifestation.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

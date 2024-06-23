@@ -138,7 +138,7 @@ function ConventionsTable() {
                 <td>{formatDate(convention.dateConv)}</td>
                 <td>{convention.fileConv}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${convention.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-convention/${convention.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(convention.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

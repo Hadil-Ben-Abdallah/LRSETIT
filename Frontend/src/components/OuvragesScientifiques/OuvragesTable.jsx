@@ -163,7 +163,7 @@ function OuvragesTable() {
                 <td>{ouvrage.isbnOuv}</td>
                 <td>{formatDate(ouvrage.dateOuv)}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${ouvrage.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-ouvrage/${ouvrage.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(ouvrage.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>

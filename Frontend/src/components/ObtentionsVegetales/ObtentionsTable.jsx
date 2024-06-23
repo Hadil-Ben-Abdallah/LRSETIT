@@ -118,7 +118,7 @@ function ObtentionsTable() {
                 <td>{obtention.fileObt}</td>
                 <td>{formatDate(obtention.dateObt)}</td>
                 <td>
-                  <Link className="btn mx-2 btn-success dash" to={`/edit-project/${obtention.id}`}>Editer</Link>
+                  <Link className="btn mx-2 btn-success dash" to={`/edit-obtention/${obtention.id}`}>Editer</Link>
                   <button onClick={() => handleDelete(obtention.id)} className="btn mx-2 btn-danger delete">Supprimer</button>
                 </td>
               </tr>
