@@ -100,7 +100,12 @@ const handleSubmit = (event) => {
   Object.keys(values).forEach((key) => {
     if (
       !values[key] && key !== "lienArt" && 
+      !values[key] && key !== "cinAutArt" && 
+      !values[key] && key !== "ordreAutArt" && 
+      !values[key] && key !== "nomAutArt" && 
+      !values[key] && key !== "prénomAutArt" && 
       !values[key] && key !== "fileArt" &&
+      !values[key] && key !== "paysAutArt" &&
       !values[key] && key !== "identifiantAutArt" &&
       !values[key] && key !== "emailAutArt" &&
       !values[key] && key !== "listesJourArt" &&
@@ -283,9 +288,6 @@ const handleSubmit = (event) => {
                           name="cinAutArt"
                           onChange={handleChange}
                         />
-                        {errors.cinAutArt && (
-                  <span className="error-message">{errors.cinAutArt}</span>
-                )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -301,9 +303,6 @@ const handleSubmit = (event) => {
                           name="ordreAutArt"
                           onChange={handleChange}
                         />
-                        {errors.ordreAutArt && (
-                  <span className="error-message">{errors.ordreAutArt}</span>
-                )}
                       </div>
                     </div>
                   )}
@@ -323,9 +322,6 @@ const handleSubmit = (event) => {
                           name="nomAutArt"
                           onChange={handleChange}
                         />
-                        {errors.nomAutArt && (
-                  <span className="error-message">{errors.nomAutArt}</span>
-                )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -341,9 +337,6 @@ const handleSubmit = (event) => {
                           name="prénomAutArt"
                           onChange={handleChange}
                         />
-                        {errors.prénomAutArt && (
-                  <span className="error-message">{errors.prénomAutArt}</span>
-                )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -359,9 +352,6 @@ const handleSubmit = (event) => {
                           name="cinAutArt"
                           onChange={handleChange}
                         />
-                        {errors.cinAutArt && (
-                  <span className="error-message">{errors.cinAutArt}</span>
-                )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -408,9 +398,6 @@ const handleSubmit = (event) => {
   onChange={(val) => handleChangeCountry(author.id, val)}
 />
 
-                        {errors.paysAutArt && (
-                  <span className="error-message">{errors.paysAutArt}</span>
-                )}
                       </div>
                       <div className="col-md-12">
                         <label
@@ -426,9 +413,6 @@ const handleSubmit = (event) => {
                           name="ordreAutArt"
                           onChange={handleChange}
                         />
-                        {errors.ordreAutArt && (
-                  <span className="error-message">{errors.ordreAutArt}</span>
-                )}
                       </div>
                     </div>
                   )}

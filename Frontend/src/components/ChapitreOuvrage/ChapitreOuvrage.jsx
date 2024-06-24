@@ -96,14 +96,15 @@ function ChapitreOuvrage() {
     const newErrors = {};
     Object.keys(values).forEach((key) => {
       if (
-        !values[key] &&
-        key !== "identifiantAutChap" &&
-        !values[key] &&
-        key !== "emailAutChap" &&
-        !values[key] &&
-        key !== "lienChap" &&
-        !values[key] &&
-        key !== "isbnChap"
+        !values[key] && key !== "identifiantAutChap" &&
+        !values[key] && key !== "cinAutChap" &&
+        !values[key] && key !== "ordreAutChap" &&
+        !values[key] && key !== "nomAutChap" &&
+        !values[key] && key !== "prénomAutChap" &&
+        !values[key] && key !== "paysAutChap" &&
+        !values[key] && key !== "emailAutChap" &&
+        !values[key] && key !== "lienChap" &&
+        !values[key] && key !== "isbnChap"
       ) {
         // Exclude "budget" from required fields check
         newErrors[key] = "Ce champ est requis";
@@ -230,11 +231,6 @@ function ChapitreOuvrage() {
                           name="cinAutChap"
                           onChange={handleChange}
                         />
-                        {errors.cinAutChap && (
-                          <span className="error-message">
-                            {errors.cinAutChap}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -250,11 +246,6 @@ function ChapitreOuvrage() {
                           name="ordreAutChap"
                           onChange={handleChange}
                         />
-                        {errors.ordreAutChap && (
-                          <span className="error-message">
-                            {errors.ordreAutChap}
-                          </span>
-                        )}
                       </div>
                     </div>
                   )}
@@ -274,11 +265,6 @@ function ChapitreOuvrage() {
                           name="nomAutChap"
                           onChange={handleChange}
                         />
-                        {errors.nomAutChap && (
-                          <span className="error-message">
-                            {errors.nomAutChap}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -294,11 +280,6 @@ function ChapitreOuvrage() {
                           name="prénomAutChap"
                           onChange={handleChange}
                         />
-                        {errors.prénomAutChap && (
-                          <span className="error-message">
-                            {errors.prénomAutChap}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -314,11 +295,6 @@ function ChapitreOuvrage() {
                           name="cinAutChap"
                           onChange={handleChange}
                         />
-                        {errors.cinAutChap && (
-                          <span className="error-message">
-                            {errors.cinAutChap}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -364,11 +340,6 @@ function ChapitreOuvrage() {
   name="paysAutChap"
   onChange={(val) => handleChangeCountry(author.id, val)}
 />
-                        {errors.paysAutChap && (
-                          <span className="error-message">
-                            {errors.paysAutChap}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-12">
                         <label
@@ -384,11 +355,6 @@ function ChapitreOuvrage() {
                           name="ordreAutChap"
                           onChange={handleChange}
                         />
-                        {errors.ordreAutChap && (
-                          <span className="error-message">
-                            {errors.ordreAutChap}
-                          </span>
-                        )}
                       </div>
                     </div>
                   )}

@@ -102,39 +102,6 @@ app.post('/inscription', (req, res) => {
 });
 
 
-// app.post('/login', (req, res) => {
-//   const { email, password } = req.body;
-//   const sql = "SELECT * FROM inscriptions WHERE emailInsc = ? AND cinInsc = ?";
-//   db.query(sql, [email, password], (err, results) => {
-//     if (err) return res.json({ success: false, message: err.message });
-//     if (results.length > 0) {
-//       return res.json({ success: true });
-//     } else {
-//       return res.json({ success: false, message: 'Invalid email or password' });
-//     }
-//   });
-// });
-
-
-// app.get("/inscriptions", (req, res) => {
-//   const sql = "SELECT * FROM inscriptions where cinInsc = 14405961";
-//   db.query(sql, (err, result) => {
-//     if (err) {
-//       return res.json({ message: "Server error" });
-//     }
-
-//     const formattedResult = result.map((record) => {
-//       return {
-//         ...record,
-//         dateNaissanceInsc: record.dateNaissanceInsc ? moment(record.dateNaissanceInsc).format('DD-MM-YYYY') : null,
-//         dateDiplomeInsc: record.dateDiplomeInsc ? moment(record.dateDiplomeInsc).format('DD-MM-YYYY') : null,
-//       };
-//     });
-
-//     return res.json({ Data: formattedResult });
-//   });
-// });
-
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
   const sql = "SELECT cinInsc FROM inscriptions WHERE emailInsc = ? AND cinInsc = ?";
@@ -177,6 +144,8 @@ app.get("/new_projects", (req, res) => {
     return res.json({Data: result});
   })
 })
+
+
 
 app.put('/update/:id', (req, res) => {
   const columns = [];

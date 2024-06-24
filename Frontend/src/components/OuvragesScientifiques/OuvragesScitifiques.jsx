@@ -38,9 +38,9 @@ function OuvrageScientifiques() {
         author.id === id ? { ...author, country } : author
       )
     );
-    setValues(prevValues => ({
+    setValues((prevValues) => ({
       ...prevValues,
-      paysAutOuv: country
+      paysAutOuv: country,
     }));
     setErrors({ ...errors, paysAutOuv: "" });
   };
@@ -93,14 +93,16 @@ function OuvrageScientifiques() {
     const newErrors = {};
     Object.keys(values).forEach((key) => {
       if (
-        !values[key] &&
-        key !== "identifiantAutOuv" &&
-        !values[key] &&
-        key !== "emailAutOuv" &&
-        !values[key] &&
-        key !== "lienOuv" &&
-        !values[key] &&
-        key !== "isbnOuv"
+        !values[key] && key !== "identifiantAutOuv" &&
+        !values[key] && key !== "cinAutOuv" &&
+        !values[key] && key !== "ordreAutOuv" &&
+        !values[key] && key !== "nomAutOuv" &&
+        !values[key] && key !== "prénomAutOuv" &&
+        !values[key] && key !== "prénomAutOuv" &&
+        !values[key] && key !== "paysAutOuv" &&
+        !values[key] && key !== "emailAutOuv" &&
+        !values[key] && key !== "lienOuv" &&
+        !values[key] && key !== "isbnOuv"
       ) {
         // Exclude "budget" from required fields check
         newErrors[key] = "Ce champ est requis";
@@ -138,7 +140,12 @@ function OuvrageScientifiques() {
                 <label htmlFor="inputAnnée" className="form-label">
                   Année <span>*</span>
                 </label>
-                <select id="inputAnnée" className="form-select" name="annéeOuv" onChange={handleChange}>
+                <select
+                  id="inputAnnée"
+                  className="form-select"
+                  name="annéeOuv"
+                  onChange={handleChange}
+                >
                   <option value="">Sélectionner une année</option>
                   {years.map((year, index) => (
                     <option key={index} value={year.toString()}>
@@ -227,11 +234,6 @@ function OuvrageScientifiques() {
                           name="cinAutOuv"
                           onChange={handleChange}
                         />
-                        {errors.cinAutOuv && (
-                          <span className="error-message">
-                            {errors.cinAutOuv}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -247,11 +249,6 @@ function OuvrageScientifiques() {
                           name="ordreAutOuv"
                           onChange={handleChange}
                         />
-                        {errors.ordreAutOuv && (
-                          <span className="error-message">
-                            {errors.ordreAutOuv}
-                          </span>
-                        )}
                       </div>
                     </div>
                   )}
@@ -271,11 +268,6 @@ function OuvrageScientifiques() {
                           name="nomAutOuv"
                           onChange={handleChange}
                         />
-                        {errors.nomAutOuv && (
-                          <span className="error-message">
-                            {errors.nomAutOuv}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -291,11 +283,6 @@ function OuvrageScientifiques() {
                           name="prénomAutOuv"
                           onChange={handleChange}
                         />
-                        {errors.prénomAutOuv && (
-                          <span className="error-message">
-                            {errors.prénomAutOuv}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -311,11 +298,6 @@ function OuvrageScientifiques() {
                           name="cinAutOuv"
                           onChange={handleChange}
                         />
-                        {errors.cinAutOuv && (
-                          <span className="error-message">
-                            {errors.cinAutOuv}
-                          </span>
-                        )}
                       </div>
                       <div className="col-md-6">
                         <label
@@ -355,17 +337,14 @@ function OuvrageScientifiques() {
                           Pays <span>*</span>
                         </label>
                         <CountryDropdown
-  id={`inputPays${author.id}`}
-  className="form-select"
-  value={author.country}
-  name="paysAutOuv"
-  onChange={(val) => handleChangeCountry(author.id, val)}
-/>
-                        {errors.paysAutOuv && (
-                          <span className="error-message">
-                            {errors.paysAutOuv}
-                          </span>
-                        )}
+                          id={`inputPays${author.id}`}
+                          className="form-select"
+                          value={author.country}
+                          name="paysAutOuv"
+                          onChange={(val) =>
+                            handleChangeCountry(author.id, val)
+                          }
+                        />
                       </div>
                       <div className="col-md-12">
                         <label
@@ -381,11 +360,6 @@ function OuvrageScientifiques() {
                           name="ordreAutOuv"
                           onChange={handleChange}
                         />
-                        {errors.ordreAutOuv && (
-                          <span className="error-message">
-                            {errors.ordreAutOuv}
-                          </span>
-                        )}
                       </div>
                     </div>
                   )}
@@ -491,15 +465,12 @@ function OuvrageScientifiques() {
                 )}
               </div>
               <div className="col-12">
-              <button
+                <button
                   type="submit"
                   className="btn rounded-pill submit"
                   state={{ scroll: true }}
                 >
-                  <Link
-                  to="/create-success"
-                  >
-                  </Link>
+                  <Link to="/create-success"></Link>
                   Valider
                 </button>
               </div>
